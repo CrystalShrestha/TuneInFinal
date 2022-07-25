@@ -1,0 +1,80 @@
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #7f4ba3;
+    transform-origin: bottom right;
+    transition: transform 0.35s ease-out;
+  }
+  
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  .app-logo {
+    margin-left: 20px;
+    height: 70px;
+    width: 70px;
+  }
+  
+  .title-text{
+    margin-left: 10px;
+    font-size: 30px;
+    font-weight: 800;
+  
+  }
+  
+  .title-menu{
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 600;
+  
+  }
+  
+  .subtitle-text{
+    font-family: 'Fenix', serif;  color: #7f4ba3; font-size: 18px; 
+  }
+  
+  .active {
+    color: #7f4ba3 !important;
+    font-weight: 500;
+  }
+  
+  .mySlides1 {
+    text-align: center;
+    height: 400px;
+    width: 100%;
+    max-height:100%;
+    object-fit: cover;
+    display: block;
+    background-image: url("../images/epiphone1.jpg")
+  }
+  .mySlides2 {
+    text-align: center;
+    height: 400px;
+    width: 100%;
+    max-height:100%;
+    object-fit: cover;
+    display: block;
+    background-image: url("../images/epiphone2.jpg")
+  }
+  .mySlides3 {
+    text-align: center;
+    height: 400px;
+    width: 100%;
+    max-height:100%;
+    object-fit: cover;
+    display: block;
+    background-image: url("../images/epiphone3.jpg")
+  }
+  
