@@ -4,7 +4,7 @@ from store.models.customer import Customer
 from django.views import View
 
 
-class Signup (View):
+class Signup(View):
     def get(self, request):
         return render (request, 'signup.html')
 

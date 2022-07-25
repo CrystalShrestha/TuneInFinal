@@ -1,0 +1,120 @@
+{% include 'base.html' %}
+<body style="overflow-x: hidden">
+    <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+      <div class="col-md-6 px-0">
+        <h1 class="display-4 font-italic">Become an Artist</h1>
+        <p class="lead my-3">
+          If you want to feature your talent in our page, please fill out the form below!
+        </p>
+      </div>
+    </div>
+  <div class="row d-flex justify-content-center">
+    <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center">
+      <p class="blue-text">
+        Just answer a few questions<br />
+        so that we can personalize the right experience for you.
+      </p>
+      <div class="card p-3">
+        <form class="form-card" onsubmit="event.preventDefault()">
+          <div class="row justify-content-between text-left">
+            <div class="form-group col-sm-6 flex-column d-flex">
+              <label class="form-control-label"
+                >First name<span class="text-danger"> *</span></label
+              >
+              <input
+                type="text"
+                id="fname"
+                name="fname"
+                placeholder="Enter your first name"
+                onblur="validate(1)"
+              />
+            </div>
+            <div class="form-group col-sm-6 flex-column d-flex">
+              <label class="form-control-label"
+                >Last name<span class="text-danger"> *</span></label
+              >
+              <input
+                type="text"
+                id="lname"
+                name="lname"
+                placeholder="Enter your last name"
+                onblur="validate(2)"
+              />
+            </div>
+          </div>
+          <div class="row justify-content-between text-left">
+            <div class="form-group col-sm-6 flex-column d-flex">
+              <label class="form-control-label"
+                >Business email<span class="text-danger"> *</span></label
+              >
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder=""
+                onblur="validate(3)"
+              />
+            </div>
+            <div class="form-group col-sm-6 flex-column d-flex">
+              <label class="form-control-label"
+                >Phone number<span class="text-danger"> *</span></label
+              >
+              <input
+                type="text"
+                id="mob"
+                name="mob"
+                placeholder=""
+                onblur="validate(4)"
+              />
+            </div>
+          </div>
+          <div class="row justify-content-between text-left">
+            <div class="form-group col-sm-6 flex-column d-flex">
+              <label class="form-control-label"
+                >Description about your talent<span class="text-danger"> *</span></label
+              >
+              <input
+                type="text"
+                id="job"
+                name="job"
+                placeholder=""
+                onblur="validate(5)"
+              />
+            </div>
+          </div>
+          <div class="row justify-content-between text-left">
+            <div class="form-group col-12 flex-column d-flex">
+              <label class="form-control-label"
+                >What would you be using Tune.in for?<span class="text-danger">
+                  *</span
+                ></label
+              >
+              <input
+                type="text"
+                id="ans"
+                name="ans"
+                placeholder=""
+                onblur="validate(6)"
+              />
+            </div>
+          </div>
+          <div class="row justify-content-end">
+            <div class="form-group col-sm-6">
+              <button type="submit" class="btn-block btn-primary">
+                Submit
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+<footer class="bg-light pb-3 py-3">
+    <div class="container text-center">
+      <p class="font-italic text-muted mb-0">
+        &copy; Copyrights tune.in All rights reserved.
+      </p>
+    </div>
+  </footer>
